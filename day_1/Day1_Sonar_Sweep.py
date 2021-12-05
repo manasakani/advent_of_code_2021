@@ -1,7 +1,7 @@
 # Day 1, Sonar Sweep
 
 m = []
-with open('day1_measurements.txt', 'r') as f:
+with open('measurements.txt', 'r') as f:
     for line in f:
         m.append(int(line))
 
@@ -13,7 +13,7 @@ def goes_up(m):
 
 
 if __name__ == '__main__':
-    
+
     print(f'Part 1: There are {goes_up(m)} measurements')
 
     windows = [i+j+k for i, j, k in zip(m[:-2], m[1:-1], m[2:])]
