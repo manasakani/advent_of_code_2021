@@ -1,11 +1,5 @@
 # Day 1, Sonar Sweep
 
-m = []
-with open('measurements.txt', 'r') as f:
-    for line in f:
-        m.append(int(line))
-
-
 def goes_up(m):
     diffs = [j-i for i, j in zip(m[1:], m[:-1])]
     count = len([1 for diff in diffs if diff < 0])
@@ -13,6 +7,11 @@ def goes_up(m):
 
 
 if __name__ == '__main__':
+
+    m = []
+    with open('measurements.txt', 'r') as f:
+        for line in f:
+            m.append(int(line))
 
     print(f'Part 1: There are {goes_up(m)} measurements')
 
