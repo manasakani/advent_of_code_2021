@@ -56,7 +56,7 @@ subroutine print_array(array, m)
 implicit none
 
   integer, intent(in) :: m
-  integer,intent(in) :: array(m, m)
+  integer, intent(in) :: array(m, m)
   integer :: i, j
 
   do, i=1,m
@@ -90,7 +90,7 @@ implicit none
 
   integer, intent(in) :: m, markers(m, m)
   integer, intent(out) :: finish
-  
+
   integer, dimension(1:m) :: rows, cols
   integer :: i
 
