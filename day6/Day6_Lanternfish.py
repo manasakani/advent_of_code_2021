@@ -35,9 +35,7 @@ if __name__ == '__main__':
                 new_fish.append(Fish())
             fish.get_older()
 
+        # Add the new fish to the school
         school += new_fish
 
     print(f'There are {len(school)} fish in the school!')
-
-    ''' the second part is to do this for 256 days and i
-        now regret using this approach :') '''
