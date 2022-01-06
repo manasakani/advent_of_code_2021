@@ -3,7 +3,6 @@ import numpy as np
 if __name__ == '__main__':
 
     # Get input:
-    og_bins = []
     with open('crab_positions_real.txt') as f:
         crab_positions = f.read().split(',')
 

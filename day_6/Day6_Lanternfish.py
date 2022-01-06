@@ -13,7 +13,6 @@ class Fish():
 if __name__ == '__main__':
 
     # Get input:
-    og_bins = []
     with open('fish.txt') as f:
         fish_timers = f.read().split(',')
 
